@@ -2,13 +2,13 @@ import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class inputCommand {
+public class InputCommand {
     private String[] commandList = {"Exit", "Run", "Restart", "Sleep", "Kill", "Play"};
 
 
     @Override
     public String toString() {
-        return "inputCommand{" +
+        return "InputCommand{" +
                 "commandList=" + Arrays.toString(commandList) +
                 '}';
     }
@@ -16,9 +16,9 @@ public class inputCommand {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof inputCommand)) return false;
+        if (!(o instanceof InputCommand)) return false;
 
-        inputCommand that = (inputCommand) o;
+        InputCommand that = (InputCommand) o;
 
         if (!Arrays.equals(commandList, that.commandList)) return false;
 
