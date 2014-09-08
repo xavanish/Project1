@@ -2,10 +2,10 @@
 public class App {
     public static void main(String[] args) {
 
-        inputCommand action1 = new inputCommand();
+        System.out.println("Type Help for a list of available commands");
 
-        action1.runCommand();
+        MainProgram loop = new MainProgram();
+        loop.mainLoop();
+
     }
 }
-
-
